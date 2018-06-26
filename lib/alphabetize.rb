@@ -5,7 +5,7 @@ def alphabetize(arr)
   arr.sort_by{|sentence|
     sentence.split(" ").sort_by{|word|
       word.split("").sort_by{|char|
-    list.index(char)
+        list.index(char)
       }
     } 
   }
