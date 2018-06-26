@@ -2,8 +2,9 @@ def alphabetize(arr)
   # code here
   list  = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split("")
   
-  new_arr = arr.sort_by{|sentence|
-    list.index(sentence[0])
-    }
-  final_arr = new_arr.sort
+  arr.sort_by{|sentence|
+    sentence.split(" ").sort_by{|char|
+    list.index(char)
+    } 
+  }
 end
