@@ -10,7 +10,7 @@ def alphabetize(arr)
     } 
   }
   
-  new_arr.sort_by{|sentence
+  new_arr.sort_by{|sentence|
     list.index(sentence[0])
   }
 end
